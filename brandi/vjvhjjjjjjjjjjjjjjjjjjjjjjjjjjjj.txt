@@ -1,0 +1,25 @@
+CREATE DATABASE desafio1;
+
+USE desafio1;
+
+
+CREATE TABLE cliente (
+ID int PRIMARY KEY auto_increment,
+sexo varchar(1),
+id_estado int auto_increment,
+nome varchar(500),
+)
+
+CREATE TABLE estado (
+estado varchar(500),
+UF varchar(2),
+ID int PRIMARY KEY auto_increment,
+)
+
+ALTER TABLE cliente ADD FOREIGN KEY(id_estado) REFERENCES estado (ID)
+
+
+Insert Into
+
+
+
